@@ -38,11 +38,11 @@ inputs:
 
   project_id:
     description: ID of project to operate on.
-    default: { get_secret: keystone_project_id}
+    default: { get_secret: keystone_project_id }
 
   external_network_name:
     description: Openstack tenant external network name.
-    default: ext-net
+    default: { get_secret: external_network_name }
 
   nameservers:
     default: [8.8.4.4, 8.8.8.8]
