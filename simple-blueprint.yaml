@@ -42,6 +42,7 @@ inputs:
 
   external_network_name:
     description: Openstack tenant external network name.
+    default: ext-net
 
   nameservers:
     default: [8.8.4.4, 8.8.8.8]
